@@ -1,0 +1,14 @@
+---
+- name: copy files
+  win_copy:
+    src: "{{ role_path }}/files/"
+    dest: "\\Windows\\temp\\"
+    mode: 0644
+
+- name: set timezone to 'AUS Eastern Standard Time (GMT+10:00)'
+  win_timezone:
+    timezone: AUS Eastern Standard Time
+
+
+#- name: Update defender signature and windows updates
+#  win_shell: powershell -exec bypass -command "C:\\windows\\Temp\\windows_update.ps1"

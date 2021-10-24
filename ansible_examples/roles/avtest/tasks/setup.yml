@@ -1,0 +1,24 @@
+---
+- name: Install git
+  win_chocolatey:
+    name: git
+    state: present
+
+- name: Ensure googlechrome installed
+  win_chocolatey:
+    name: googlechrome
+    state: present
+
+- name: Install notepadplusplus version 8.1.4
+  win_chocolatey:
+    name: notepadplusplus
+    state: present
+    version: '8.1.4'
+
+
+#- name: Install Visual Studio 2019 Community
+#  win_chocolatey:
+#    name: visualstudio2019community
+#    state: present
+#    version: 16.11.3.0
+#    package_params: '"--add Microsoft.VisualStudio.Workload.ManagedDesktop;includeRecommended"'

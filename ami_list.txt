@@ -1,0 +1,7 @@
+Kali Linux 2021.3 64bit                             ami-041e8a9f87130339b
+Kali GUI 2020.4 64bit                     
+Microsoft Windows Server 2019 Base                  ami-00803a3c61ac12ee2
+Microsoft Windows Server 2016 Base                  ami-04632b5664be92c83
+Microsoft Windows Server 2012 R2 Base               ami-044a52b206aed8b63
+Ubuntu Server 20.04 LTS (HVM), SSD Volume Type      ami-0567f647e75c7bc05 (64-bit x86)
+Ubuntu Server 18.04 LTS (HVM), SSD Volume Type      ami-0f39d06d145e9bb63 (64-bit x86)

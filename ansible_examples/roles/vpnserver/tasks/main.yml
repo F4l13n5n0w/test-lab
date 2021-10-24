@@ -1,0 +1,23 @@
+---
+- name: copy files
+  become: true
+  copy:
+    src: "{{ role_path }}/files/"
+    dest: "/home/ubuntu/"
+    owner: ubuntu
+    group: ubuntu
+    mode: 0755
+
+- name: Install latest version of Apache
+  apt: name=apache2 update_cache=yes state=latest
+
+
+#- name: Execute script
+#  become: true
+#  command: /bin/bash /home/ubuntu/openvpn-install.sh
+
+#- name: copying client ovpn file
+#  become: true 
+#  fetch:
+#    src: /home/ubuntu/player.ovpn
+#    dest: ../player.ovpn
